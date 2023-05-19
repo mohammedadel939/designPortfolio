@@ -1,0 +1,12 @@
+.navbar .nav-link {
+    color: white;
+}
+.navbar .nav-link.active,
+.navbar .nav-link:focus,
+.navbar .nav-link:hover {
+    color: aqua;
+}
+
+.search {
+    border-left: solid 1px blue;
+}

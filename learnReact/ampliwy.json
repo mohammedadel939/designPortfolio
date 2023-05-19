@@ -1,0 +1,12 @@
+[
+    {
+        "listname": {"firstname": "mohammed", "lastname": "adeel"},
+        "name2": "mohammed",
+        "name3": "alaa"
+    },
+    {
+        "salary1": "2000",
+        "salary2": "3000",
+        "salary3": "4000"
+    }
+]

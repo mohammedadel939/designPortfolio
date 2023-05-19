@@ -1,0 +1,309 @@
+:root {
+    --dark-color: #19283f;
+    --green-color: #33d1cc;
+    --yellow-color: #ffc400;
+    --section-color: #eff2fa;
+    --red-color: red;
+}
+
+/*start main  button global-global*/
+.navbar .main-btn {
+    width: 100%;
+}
+
+@media(min-width: 576px) {
+    .navbar .main-btn {
+        width: 10%;
+    }
+}
+
+/* end main  button*/
+
+/* start main-title global-global*/
+.main-title::after {
+    content: "";
+    width: 150px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.main-title h2 {
+    color: #ffc400;
+}
+
+/* end main-title */
+
+.navbar {
+    background-color: var(--dark-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar .search {
+    border-left: solid 1px var(--green-color);
+    cursor: pointer;
+
+}
+
+.navbar .search svg {
+    color: var(--green-color);
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font: 25px;
+    border-color: white;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* start landing*/
+.landing {
+    background-color: var(--dark-color);
+    height: 80vh;
+}
+
+/* end landing*/
+
+/* start features */
+.feat .icon-holder {
+    height: 200px;
+}
+
+.feat .icon-holder svg {
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.feat .number {
+    color: var(--section-color);
+    font-size: 12rem;
+}
+
+.feat .icon {
+    color: var(--green-color);
+}
+
+.feat h4 {
+    color: var(--yellow-color)
+}
+
+/* end features */
+
+/* start our-work */
+.our-work {
+    background-color: var(--section-color);
+}
+
+.our-work ul li:not(.active):hover {
+    color: var(--red-color);
+}
+
+.our-work ul li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.our-work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #23cae570;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+
+/* end our-work */
+
+/* start stuff */
+.description {
+    max-width: 700px;
+}
+
+/* end stuff */
+/* start stuff */
+.our-team {
+    background-color: var(--section-color);
+}
+
+.our-team h4 {
+    background-color: var(--green-color);
+}
+
+/* end stuff */
+/* start project */
+.project {
+    background-color: var(--dark-color);
+}
+
+/* end project */
+/* start supscrip */
+.supscrip {
+    background-color: var(--yellow-color);
+}
+
+.supscrip .box-searth::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 20px);
+    height: 2px;
+    background-color: white;
+}
+
+
+/* end supscrip */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* button one */
+.m-btn-blue {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    border: none;
+    border: solid 3px rgb(255, 255, 255, 100%);
+    font-weight: 500;
+}
+
+.m-btn-blue:hover {
+    border-color: rgb(255, 255, 255, 80%);
+}
+
+/* button tow */
+.m-btn-out {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255, 100%);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: blue;
+    border: none;
+    border: solid 3px blue;
+    font-weight: 500;
+}
+
+.m-btn-out:hover {
+    background-color: rgb(255, 255, 255, 10%);
+}
+
+.m-link {
+    text-decoration: none;
+    color: white;
+}
